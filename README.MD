@@ -38,3 +38,8 @@ autoload composer so that laravel knows about new seeders.
 
 5- to run seeder you must write this command (```php artisan db:seed --class=VoyagerDeploymentOrchestratorSeeder```)
 
+
+###
+Develop By <a href="https://github.com/DrudgeRajen/"> DrudgeRajen </a> 
+
+```Redevelop By  Nadsoft Company ```
