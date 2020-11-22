@@ -42,4 +42,4 @@ autoload composer so that laravel knows about new seeders.
 ###
 Develop By <a href="https://github.com/DrudgeRajen/"> DrudgeRajen </a> 
 
-```Redevelop By  Nadsoft Company ```
+Updated By  <a href="https://nadsoft.net/"> Nadsoft Company </a>
