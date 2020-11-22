@@ -1,0 +1,41 @@
+<?php
+
+use Illuminate\Database\Seeder;
+use TCG\Voyager\Models\DataType;
+use TCG\Voyager\Models\Menu;
+use TCG\Voyager\Facades\Voyager;
+use TCG\Voyager\Models\MenuItem;
+
+class {{class}} extends Seeder
+{
+    /**
+     * Auto generated seed file
+     *
+     * @return void
+     *
+     * @throws Exception
+     */
+    public function run()
+    {
+        try {
+            \DB::beginTransaction();
+
+            {{delete_statements}}
+
+            {{insert_statements}}
+
+            {{datatype_slug_statements}}
+            {{translation_insert_statements}}
+
+            {{permission_insert_statements}}
+
+            {{menu_insert_statements}}
+        } catch(Exception $e) {
+           throw new Exception('Exception occur ' . $e);
+
+           \DB::rollBack();
+        }
+
+        \DB::commit();
+    }
+}

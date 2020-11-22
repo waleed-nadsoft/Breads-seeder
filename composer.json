@@ -1,0 +1,40 @@
+{
+  "name": "drudge-rajen/voyager-deployment-orchestrator",
+  "description": "Package for Voyager BREAD Deployment.",
+  "keywords": [
+    "laravel",
+    "voyager",
+    "voyager-deployment",
+    "voyager-seeder",
+    "bread-seeder"
+  ],
+  "type": "library",
+  "license": "MIT",
+  "require-dev": {
+    "friendsofphp/php-cs-fixer": "^2.9@dev",
+    "tcg/voyager": "^1.1"
+  },
+  "autoload": {
+    "psr-4": {
+      "DrudgeRajen\\VoyagerDeploymentOrchestrator\\": "src/"
+    }
+  },
+  "authors": [
+    {
+      "name": "Rajendra Sharma",
+      "email": "drudge.rajan@gmail.com"
+    }
+  ],
+  "minimum-stability": "stable",
+  "extra": {
+    "laravel": {
+      "providers": [
+        "DrudgeRajen\\VoyagerDeploymentOrchestrator\\VoyagerDeploymentOrchestratorServiceProvider"
+      ]
+    }
+  },
+  "scripts": {
+    "lint": "php-cs-fixer fix --diff --dry-run",
+    "fix": "php-cs-fixer fix -vvv"
+  }
+}

@@ -1,0 +1,32 @@
+<?php
+
+use Illuminate\Database\Seeder;
+use TCG\Voyager\Models\DataType;
+
+class {{class}} extends Seeder
+{
+    /**
+     * Auto generated seed file
+     *
+     * @return void
+     *
+     * @throws Exception
+     */
+    public function run()
+    {
+        try {
+            \DB::beginTransaction();
+
+            {{datatype_slug_statement}}
+
+            {{insert_statements}}
+        } catch(Exception $e) {
+            throw new Exception('exception occur ' . $e);
+
+            \DB::rollBack();
+        }
+
+        \DB::commit();
+    }
+}
+
