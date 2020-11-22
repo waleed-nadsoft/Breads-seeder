@@ -1,6 +1,6 @@
 {
   "name": "nadsoft/breads-seed",
-  "description": "Package for Voyager BREAD Deployment.",
+  "description": "Package for Voyager BREAD seed for laravel 8.",
   "keywords": [
     "laravel",
     "voyager",
@@ -21,8 +21,8 @@
   },
   "authors": [
     {
-      "name": "Rajendra Sharma",
-      "email": "drudge.rajan@gmail.com"
+      "name": "Waleed Hamdan",
+      "email": "waleed@nadsoft.net"
     }
   ],
   "minimum-stability": "stable",
