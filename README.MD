@@ -15,9 +15,7 @@
 for example ..
 ```
 return [
-    'tables' => [
-        "projects"
-    ],
+    'tables' => ["table1","table2"],
 ];
 ```
 
@@ -28,13 +26,13 @@ autoload composer so that laravel knows about new seeders.
 
 ### Usage
 ```
-3- go to path (```database/Seeders/VoyagerDeploymentOrchestratorSeeder```) and 
+3- go to path (database/Seeders/VoyagerDeploymentOrchestratorSeeder) and 
 add this namespace ("namespace Database\Seeders;") and each bread created you must import it in this file;
 
 ```
 ### To run the seeder file:
 ```
-4- to run seeder you must write this command (```php artisan db:seed --class=VoyagerDeploymentOrchestratorSeeder```)
+4- to run seeder you must write this command (php artisan db:seed --class=VoyagerDeploymentOrchestratorSeeder)
 ```
 
 ###
