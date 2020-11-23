@@ -30,13 +30,8 @@ autoload composer so that laravel knows about new seeders.
 
 ### Usage
 
-3- go to path
-```
- database/Seeders/VoyagerDeploymentOrchestratorSeeder
- ```
- 
-add this namespace 
-``namespace Database\Seeders;``
+3- add this namespace ``namespace Database\Seeders;`` in this path `` database/Seeders/VoyagerDeploymentOrchestratorSeeder ``
+
 each bread created you must import it in this file;
 
 
